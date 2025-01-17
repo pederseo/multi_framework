@@ -34,7 +34,7 @@ Cada frontend interactúa con el backend mediante APIs RESTful para mostrar dato
 
 1. Clona el repositorio principal:
    ```bash
-   git clone <URL_DEL_REPO_BACKEND>
+   git clone <[URL_DEL_REPO_BACKEND](https://github.com/pederseo/multi_framework/tree/main/backend)>
    cd backend
    ```
 2. Instala las dependencias:
