@@ -1,6 +1,12 @@
 import { createComment, getCommentsById, likeButton } from "../controllers/contrllers.js";
 
-
+function clipboardCopy(texto) {
+  navigator.clipboard.writeText(texto).then(function() {
+      console.log('Texto copiado al portapapeles');
+  }).catch(function(err) {
+      console.error('Error al copiar texto: ', err);
+  });
+}
 
 export const overlayDetails = async (db, mainElement) => {
   // Crear un overlay que muestre los detalles
@@ -37,6 +43,7 @@ export const overlayDetails = async (db, mainElement) => {
 
           <div class="actions">
             <button class="like-button">❤ Likes ${db.votes}</button>
+            <button id="compartir"> compartir </button>
             <div class="comment-section" id="comment-section">
               <input id="comment-input" type="text" placeholder="Escribe un comentario..." />
               <button class="comment-button" id="comment-button">Comentar</button>
@@ -52,8 +59,10 @@ export const overlayDetails = async (db, mainElement) => {
     overlay.remove();
   });
 
+
   // Evento para agregar un nuevo comentario
   overlay.querySelector('#comment-button').addEventListener('click', async () => {
+    console.log("boton compartir")
     const commentInput = overlay.querySelector('#comment-input');
     const comment = commentInput.value.trim();
 
@@ -93,6 +102,11 @@ export const overlayDetails = async (db, mainElement) => {
       alert('Hubo un problema al intentar dar like. Intenta nuevamente.');
     }
   });
+
+  overlay.querySelector("#compartir").addEventListener('click', () => {
+    console.log("boton compartir")
+    clipboardCopy(db.url);
+  })
   
 
   // Añadir el overlay al mainElement

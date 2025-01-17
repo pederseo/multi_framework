@@ -1,54 +1,21 @@
-# Multi-Framework Web Challenge
+# Frontend con Vanilla JavaScript
 
-Este proyecto presenta un backend principal y seis frontends desarrollados en diferentes tecnologías web. El objetivo es demostrar el uso de múltiples frameworks y herramientas, siguiendo buenas prácticas de desarrollo y documentación.
+Este proyecto es parte de un sistema que incluye un backend principal y múltiples frontends, desarrollados para demostrar el uso de diversas tecnologías web siguiendo buenas prácticas. Este frontend, construido con **Vanilla JavaScript**, está diseñado para ofrecer una interfaz ligera y funcional, utilizando un único archivo HTML.
 
-## Descripción del Proyecto
+## 📄 Descripción
+Este frontend implementa la lógica y funcionalidad directamente en un archivo `index.html`, aprovechando las capacidades nativas de JavaScript para manejar estados y eventos dinámicos en el navegador sin necesidad de bibliotecas externas ni un entorno de compilación.
 
-El proyecto incluye un backend RESTful y seis frontends independientes, cada uno implementado en un framework o tecnología diferente:
+## 🚀 Cómo Usar
+1. Asegúrate de haber configurado y ejecutado el backend según las instrucciones en su README.  
+2. Clona este repositorio o copia el archivo `index.html`.  
+3. Abre el archivo en tu navegador.
+4. Interactúa con la interfaz conectada al backend.
 
-1. **Vanilla JS** (ES6 sin herramientas de construcción)
-2. **Alpine.js**
-3. **Vue.js**
-4. **Svelte**
-5. **Angular**
-6. **React**
+## 📦 Requisitos
+- Un navegador moderno compatible con JavaScript.
+- Conexión con el backend principal en `http://localhost:5000` (o la URL configurada).
 
-Cada frontend interactúa con el backend mediante APIs RESTful para mostrar datos y realizar operaciones básicas.
-
----
-
-## Repositorios de Frontend
-
-- [Frontend Vanilla JS](http://127.0.0.1:5500/ch_desarrollo_web/multi_framework/front_vanilla/index.html)
-- [Frontend Alpine.js](http://127.0.0.1:5500/ch_desarrollo_web/multi_framework/front_alpine/index.html)
-- [Frontend Vue.js](http://localhost:5173)
-- [Frontend Svelte](http://localhost:8080)
-- [Frontend Angular](http://localhost:4200)
-- [Frontend React](http://localhost:3000)
-
----
-
-## Cómo Ejecutar el Proyecto
-
-### Backend
-
-1. Clona el repositorio principal:
-   ```bash
-   git clone <URL_DEL_REPO_BACKEND>
-   cd backend
-   ```
-2. Instala las dependencias:
-   ```bash
-   npm install
-   ```
-3. Ejecuta el servidor:
-   ```bash
-   npm start
-   ```
-4. El backend estará disponible en `http://localhost:5000`.
-
-### Frontends
-
-Consulta los READMEs individuales en cada repositorio para instrucciones específicas de instalación, ejecución y despliegue.
-
----
+## 🛠️ Tecnologías Utilizadas
+- **HTML5**: Estructura del documento.
+- **Vanilla JavaScript**: Lógica y funcionalidad en el frontend.
+- **CSS**: Estilos (incrustados o externos).

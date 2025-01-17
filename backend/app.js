@@ -18,13 +18,13 @@ const allowedOrigins = [
     "http://localhost:3000"
   ];
   
-  // Configurar CORS con múltiples orígenes
-  app.use(
-    cors({
-      origin: allowedOrigins,
-      credentials: true, 
-    })
-  );
+// Configurar CORS con múltiples orígenes
+app.use(
+  cors({
+    origin: allowedOrigins,
+    credentials: true, 
+  })
+);
 
 app.use(express.json());
 app.use(express.urlencoded({extended: true}));
